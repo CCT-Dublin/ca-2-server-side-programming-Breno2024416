@@ -1,0 +1,1 @@
+//Main file to the server. Meant to handle requests and define middleware
