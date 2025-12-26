@@ -1,0 +1,86 @@
+/* * A simple CSS file to improve the user experience (UX) and visual clarity 
+ * of the form, making it easier to use.
+ */
+
+body {
+    /* Set a standard font and background color for a modern look */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    /* Use Flexbox to center the form nicely on the page, regardless of screen size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    /* The main wrapper for the form content */
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px; /* Soft edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle depth effect */
+    width: 100%;
+    max-width: 400px; /* Limits the form width for readability */
+}
+
+h1 {
+    /* Center the title */
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    /* Standard vertical spacing between fields */
+    margin-bottom: 15px;
+}
+
+label {
+    /* Ensure the label takes up its own line and stands out */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Style all input fields to look consistent */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* 'box-sizing: border-box' ensures padding doesn't increase the element's overall width, 
+       making the layout cleaner. */
+    box-sizing: border-box; 
+}
+
+button[type="submit"] {
+    /* Make the button full width and use a professional color */
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Visual feedback on hover */
+}
+
+button[type="submit"]:hover {
+    /* Darken the button on hover for good UX */
+    background-color: #0056b3;
+}
+
+.error-message {
+    /* Dedicated style for displaying validation errors */
+    color: red;
+    font-size: 0.85em;
+    margin-top: 5px;
+    /* By giving it a fixed height, the layout won't jump when an error message appears/disappears */
+    height: 1.2em; 
+}
