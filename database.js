@@ -11,7 +11,7 @@ const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',      
     password: 'Pass1234!', 
-    database: 'company_db'
+    database: 'CA2_ssp'
 });
 
 connection.connect((err) => {
@@ -67,7 +67,7 @@ const verifySchema = (callback) => {
 
 /**
  * Inserts data into 'mysql_table' using parameterized queries.
- * Parameterized queries are crucial for security to prevent SQL Injection[cite: 15, 20].
+ * Parameterized queries are crucial for security to prevent SQL Injection.
  */
 const insertData = (data, callback) => {
     const sql = `INSERT INTO mysql_table (first_name, second_name, email, phone_number, eircode) 
